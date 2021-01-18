@@ -27,10 +27,15 @@ O projeto tem como objetivo desenvolver uma aplicação de finanças chamado "de
 
 O resultado do desenvolvimento pode ser visto nesse link: <a href="https://marioandre01.github.io/dev_finances_Js_MaratonaDiscover" target="_blank">https://marioandre01.github.io/dev_finances_Js_MaratonaDiscover</a>
 
+## 📋 Cronograma das atividades
+- [x] Dia 14/01 às 20h00 - A Base de tudo
+- [ ] Dia 21/01 às 20h00 - Finalização do HTML + CSS
+- [ ] Dia 28/01 às 20h00 - Adicionando JavaScript e finalizando a aplicação
+- [ ] Dia 04/02 às 20h00 - Aula de Encerramento
 
 ## 📋 Tecnologias
 
-O projeto foi desenvolvido com as seguintes tecnologias:
+O projeto está sendo desenvolvido com as seguintes tecnologias:
 
 - HTML
 - CSS
