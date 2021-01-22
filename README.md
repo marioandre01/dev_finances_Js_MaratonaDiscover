@@ -13,7 +13,7 @@
 <p align="center"> 
   <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <!-- V<a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; -->
+  V<a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-executando-a-aplicação">Executando a aplicação</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#gear-contribuição">Contribuição</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#memo-licença">Licença</a>
@@ -41,11 +41,11 @@ O projeto está sendo desenvolvido com as seguintes tecnologias:
 - CSS
 - Javascript
 
-<!-- ## 🎨 Layout
+## 🎨 Layout
 
 <p align="center" style="background: #f8f8f8">
-  <img alt="jogo_da_cobrinha" title="jogo_da_cobrinha" src="img/snake_game_t1.png" width="800px">
-</p> -->
+  <img alt="tela dev.finance$" title="dev.finance$" src="./assets/tela_dev_finance.png" width="800px">
+</p>
 
 
 ## 💻 Executando a aplicação
