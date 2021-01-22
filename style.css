@@ -1,8 +1,9 @@
 /* -- Global -- */
 :root {
     --dark-gray: #363f5f;
-    --green: #49AA26;
-    --light-green: #3dd705;
+    --blue: #246dcc;
+    --light-blue: #328bff;
+    --dark-blue:  #094696;
     --red: #e92929; 
 }
 
@@ -48,12 +49,12 @@ h2 {
 
 /* -- Links and Buttons -- */
 a {
-    color: var(--green);
+    color: var(--blue);
     text-decoration: none;
 }
 
 a:hover {
-    color: var(--light-green);
+    color: var(--light-blue);
 }
 
 button {
@@ -62,7 +63,7 @@ button {
 
     border: none;
     color: white;
-    background: var(--green);
+    background: var(--blue);
 
     padding: 0;
 
@@ -72,7 +73,7 @@ button {
 }
 
 button:hover {
-    background: var(--light-green);
+    background: var(--light-blue);
 }
 
 .button.new {
@@ -100,7 +101,7 @@ button:hover {
 
 /* -- Header -- */
 header {
-    background: #924241;
+    background: var(--dark-blue);
     padding: 2rem 0 10rem;
     text-align: center;
 }
@@ -111,6 +112,12 @@ header h1 {
     border: 1px solid #fff;
     display: inline;
     padding: 0.5rem 2.5rem;   
+}
+
+header img {
+    border-top: 1px #fff solid; 
+    border-bottom: 1px #fff solid;
+    padding: 0.3rem 0;   
 }
 
 /* -- Balance -- */
@@ -148,7 +155,7 @@ header h1 {
 }
 
 .card.total {
-    background: #f38787;
+    background: var(--light-blue);
     color: white;
 }
 
@@ -228,6 +235,8 @@ td.expense {
 
     opacity: 0;
     visibility: hidden;
+
+    z-index: 999;
 }
 
 .modal-overlay.active {
@@ -238,6 +247,9 @@ td.expense {
 .modal {
     background: #F0F2f5;
     padding: 2.4rem;
+
+    position: relative;
+    z-index: 1;
 }
 
 /* -- Form -- */
@@ -280,11 +292,9 @@ input {
 /* -- Footer -- */
 footer {
     text-align: center;
-    padding: 2rem 0 2rem;
-    margin-top: 2rem;
+    padding: 4rem 0 2rem;
     color: var(--dark-gray);
     opacity: 0.6;
-    border-top: 1px solid rgb(218, 218, 218);
 }
 
 /* -- Responsive -- */
