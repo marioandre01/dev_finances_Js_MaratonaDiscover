@@ -274,7 +274,7 @@ input {
     
 }
 
-.input-group small {
+.input-group .help {
     opacity: 0.4;
 }
 
@@ -295,6 +295,10 @@ footer {
     padding: 4rem 0 2rem;
     color: var(--dark-gray);
     opacity: 0.6;
+}
+
+footer #author {
+    font-size: 11px;
 }
 
 /* -- Responsive -- */
