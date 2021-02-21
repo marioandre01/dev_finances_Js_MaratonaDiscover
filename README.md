@@ -31,7 +31,7 @@ O resultado do desenvolvimento pode ser visto nesse link: <a href="https://mario
 - [x] Dia 14/01 às 20h00 - A Base de tudo
 - [x] Dia 21/01 às 20h00 - Finalização do HTML + CSS
 - [x] Dia 28/01 às 20h00 - Adicionando JavaScript e finalizando a aplicação
-- [ ] Dia 04/02 às 20h00 - Aula de Encerramento
+- [x] Dia 04/02 às 20h00 - Aula de Encerramento
 
 ## 📋 Tecnologias
 
@@ -45,6 +45,11 @@ O projeto está sendo desenvolvido com as seguintes tecnologias:
 
 <p align="center" style="background: #f8f8f8">
   <img alt="tela dev.finance$" title="dev.finance$" src="./assets/tela_dev_finance.png" width="800px">
+</p>
+
+### 📱 Mobile 
+<p align="center">
+  <img alt="tela dev.finance$" title="dev.finance$" src="./assets/tela_dev_finance_mobile.png" width="250px">
 </p>
 
 

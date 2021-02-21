@@ -1,3 +1,5 @@
+
+
 const Modal = {
     open() {
         //abrir modal
@@ -25,7 +27,7 @@ const Storage = {
 const Transaction = {
     all: Storage.get(),
 
-    add(transaction){
+    add(transaction) {
         Transaction.all.push(transaction);
 
         App.reload();
@@ -43,7 +45,7 @@ const Transaction = {
         // para cada transação,
         Transaction.all.forEach(transaction => {
             //se ela for maior que zero
-            if( transaction.amount > 0 ) {
+            if (transaction.amount > 0) {
                 //somar a uma variavel e retornar a variavel
                 income += transaction.amount;
             }
@@ -58,7 +60,7 @@ const Transaction = {
         // para cada transação,
         Transaction.all.forEach(transaction => {
             //se ela for menor que zero
-            if( transaction.amount < 0 ) {
+            if (transaction.amount < 0) {
                 //somar a uma variavel e retornar a variavel
                 expense += transaction.amount;
             }
@@ -110,7 +112,7 @@ const DOM = {
         document
             .getElementById('totalDisplay')
             .innerHTML = Utils.formatCurrency(Transaction.total());
-    }, 
+    },
 
     clearTransactions() {
         DOM.transactionsContainer.innerHTML = "";
@@ -119,9 +121,9 @@ const DOM = {
 
 const Utils = {
     formatAmount(value) {
-        value = Number(value.replace(/\,\./g, "")) * 100;
-        
-        return value;
+        value = value * 100;
+
+        return Math.round(value);
     },
 
     formatDate(date) {
@@ -179,10 +181,10 @@ const Form = {
         // console.log('validar os campos');
         const { description, amount, date } = Form.getValues();
 
-        if( description.trim() === "" ||
+        if (description.trim() === "" ||
             amount.trim() === "" ||
-            date.trim() === "" ){
-                throw new Error("Por favor, preencha todos os campos");
+            date.trim() === "") {
+            throw new Error("Por favor, preencha todos os campos");
         }
     },
 
@@ -211,7 +213,7 @@ const Form = {
         } catch (error) {
             alert(error.message)
         }
-        
+
     }
 }
 
@@ -220,7 +222,7 @@ const Form = {
 const App = {
     init() {
         Transaction.all.forEach((transaction, index) => DOM.addTransaction(transaction, index));
-        
+
         DOM.updateBalance();
 
         Storage.set(Transaction.all);
@@ -233,5 +235,6 @@ const App = {
 
 // Inicio da aplicação
 App.init();
+
 
 

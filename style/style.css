@@ -1,10 +1,26 @@
 /* -- Global -- */
 :root {
+    --background: #f0f2f5;
     --dark-gray: #363f5f;
     --blue: #246dcc;
     --light-blue: #328bff;
     --dark-blue:  #094696;
-    --red: #e92929; 
+    --red: #e92929;
+    --color-button: white; 
+    --h1-header: white;
+    --img-header: white;
+    --balance-h2: white;
+    --bg-card: white;
+    --card-total: white;
+    --data-table: #969cb3;
+    --table-thead-th: white;
+    --table-tbody-td: white;
+    --td-income: #12a454;
+    --td-expense: #e92929;
+    --footer-color: #363f5f;
+    --bg-modal: #F0F2f5;
+    --check-border: white;
+    --check-before-bg: white;
 }
 
 * {
@@ -18,8 +34,33 @@ html {
 }
 
 body {
-    background: #f0f2f5;
+    background:var(--background);
     font-family: 'Poppins', sans-serif;
+}
+
+/*dark-mode styles*/
+.dark-mode {
+    --background: #292929;
+    --dark-gray: #181c2b;
+    --blue: #0987ee;
+    --light-blue: #2563b4;
+    --dark-blue:  #072e61;
+    --red: #e92929;
+    --color-button: rgb(255, 255, 255);
+    --h1-header: white;
+    --img-header: white;
+    --balance-h2: white;
+    --bg-card: rgb(247, 247, 247);
+    --card-total: white;
+    --data-table: #afb7d3;
+    --table-thead-th: rgb(83, 83, 83);
+    --table-tbody-td: white;
+    --td-income: #12a454;
+    --td-expense: #e92929;
+    --footer-color: #dddddd;
+    --bg-modal: #F0F2f5;
+    --check-border: white;
+    --check-before-bg: white;
 }
 
 .sr-only {
@@ -62,7 +103,7 @@ button {
     height: 50px;
 
     border: none;
-    color: white;
+    color:var(--color-button);
     background: var(--blue);
 
     padding: 0;
@@ -107,16 +148,16 @@ header {
 }
 
 header h1 {
-    color: #fff;
+    color: var(--h1-header);
     font-weight: 100;
-    border: 1px solid #fff;
+    border: 1px solid var(--h1-header);
     display: inline;
     padding: 0.5rem 2.5rem;   
 }
 
 header img {
-    border-top: 1px #fff solid; 
-    border-bottom: 1px #fff solid;
+    border-top: 1px var(--img-header) solid; 
+    border-bottom: 1px var(--img-header) solid;
     padding: 0.3rem 0;   
 }
 
@@ -126,13 +167,13 @@ header img {
 }
 
 #balance h2 {
-    color: white;
+    color: var(--balance-h2);
     margin-top: 0;
 }
 
 /* -- Cards -- */
 .card {
-    background: white;
+    background: var(--bg-card);
     padding: 1.5rem 2rem;
     border-radius: 0.25rem;
     margin-bottom: 2rem;
@@ -156,7 +197,7 @@ header img {
 
 .card.total {
     background: var(--light-blue);
-    color: white;
+    color: var(--card-total);
 }
 
 /* -- Table -- */
@@ -169,7 +210,7 @@ header img {
 #data-table {
     width: 100%;
     border-spacing: 0 0.5rem;
-    color: #969cb3;
+    color: var(--data-table);
 
     
 }
@@ -187,7 +228,7 @@ table tbody tr td:last-child {
 }
 
 table thead th {
-    background: white;
+    background: var(--table-thead-th);
     font-weight: normal;
     padding: 1rem 2rem;
     
@@ -203,7 +244,7 @@ table tbody tr:hover {
 }
 
 table tbody td {
-    background: white;
+    background: var(--table-tbody-td);
     padding: 1rem 2rem;
 }
 
@@ -212,11 +253,11 @@ td.description {
 }
 
 td.income {
-    color: #12a454;
+    color: var(--td-income);
 }
 
 td.expense {
-    color: #e92929;
+    color: var(--td-expense);
 }
 
 /* -- Modal -- */
@@ -245,7 +286,7 @@ td.expense {
 }
 
 .modal {
-    background: #F0F2f5;
+    background: var(--bg-modal);
     padding: 2.4rem;
 
     position: relative;
@@ -293,7 +334,7 @@ input {
 footer {
     text-align: center;
     padding: 4rem 0 2rem;
-    color: var(--dark-gray);
+    color: var(--footer-color);
     opacity: 0.6;
 }
 
@@ -313,3 +354,45 @@ footer #author {
         gap: 2rem;
     }
 }
+
+/* Them Switch */
+
+input[type="checkbox"] {
+    -webkit-appearance: none;
+    visibility: hidden;
+    display: none;
+  }
+  
+  .check {
+    border: 1px solid var(--check-border);
+    /* background: var(--red); */
+    width: 40px;
+    height: 20px;
+    position: absolute;
+    right: 20px;
+    top: 32.5px;
+    cursor: pointer;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: ease-in 0.3s;
+  }
+  
+  input[type="checkbox"]:checked ~ .check {
+    background: var(--dark-gray);
+  }
+  
+  .check::before {
+    content: "";
+    position: absolute;
+    top: 1.5px;
+    left: 2px;
+    background: var(--check-before-bg);
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    transition: 0.2s;
+  }
+  input[type="checkbox"]:checked ~ .check::before {
+    transform: translateX(20px);
+    background:var(--blue);
+  }
